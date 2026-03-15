@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  @apply bg-white text-black antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  @apply px-4 py-2 font-medium rounded;
+  @apply transition-colors duration-200;
+  @apply focus:outline-none focus:ring-1 focus:ring-offset-1;
+}
+
+.btn-primary {
+  @apply bg-black text-white;
+  @apply hover:bg-gray-800;
+  @apply focus:ring-gray-900;
+}
+
+.btn-secondary {
+  @apply bg-white text-black border border-gray-300;
+  @apply hover:bg-gray-50;
+  @apply focus:ring-gray-300;
+}
+
+.btn-ghost {
+  @apply bg-transparent text-gray-600;
+  @apply hover:bg-gray-100;
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.input {
+  @apply px-3 py-2 bg-white rounded;
+  @apply border border-gray-300;
+  @apply focus:outline-none focus:border-black focus:ring-1 focus:ring-black;
+  @apply transition-colors duration-200;
+  @apply placeholder:text-gray-400;
+}
+
+.card {
+  @apply bg-white rounded-lg;
+  @apply border border-gray-200;
+  @apply shadow-sm;
+}
+
+.header {
+  @apply bg-white;
+  @apply border-b border-gray-200;
+}
+
+.link {
+  @apply text-blue-600;
+  @apply hover:text-blue-800;
+}
+
+.badge {
+  @apply inline-flex items-center px-2 py-1 text-xs font-medium;
+  @apply bg-gray-100 text-gray-700;
+  @apply rounded;
+}
+
+.divider {
+  @apply h-px w-full bg-gray-200;
+}
